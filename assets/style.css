@@ -234,6 +234,14 @@ dl {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+body {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
 .main, .header, .footer {
   max-width: 68em;
   margin-left: auto;
