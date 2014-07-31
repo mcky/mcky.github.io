@@ -4,8 +4,4 @@ permalink: /about/
 published: true
 ---
 
-About content.
-
-
-
-
+Editing through prose.io
