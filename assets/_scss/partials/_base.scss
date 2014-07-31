@@ -1,3 +1,27 @@
-.red {
-	background: red;
+.main,
+.header,
+.footer {
+	@include outer-container;
 }
+
+%list-item {
+	display: inline;
+	margin-right: .5rem;
+}
+
+.primaryNav {
+	&__list {
+		&__item {
+			@extend %list-item;
+		}
+	}
+}
+
+.footer {
+	&__social {
+		&__item {
+			@extend %list-item;
+		}
+	}
+}
+
