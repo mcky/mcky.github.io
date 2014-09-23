@@ -7,6 +7,11 @@ var gulp = require('gulp')
 		, cmq = require('gulp-combine-media-queries')
 		, uglify = require('gulp-uglifyjs')
 		, glob = require('glob')
+		, shell = require('gulp-shell')
+
+gulp.task('build', shell.task([ 'jekyll build' ]));
+
+gulp.task('serve', shell.task([ 'jekyll serve' ]));
 
 gulp.task('sass', function() {
 	gulp.src('./assets/_scss/*.scss')
@@ -51,6 +56,9 @@ gulp.task('dist', function() {
 })
 
 gulp.task('default', ['sass', 'browser-sync'], function () {
-	gulp.watch('./assets/_scss/**/*.scss', ['sass'])
+	gulp.start('sass', 'serve', 'build');
+	gulp.watch('./*.yml', ['build'])
+	gulp.watch(['./{_layouts, _includes}/*.html', './{index,about}.md','./_posts/*.md', '!./_site/**/*.html'], ['build'])
+	gulp.watch('./assets/_scss/**/*.scss', ['sass', 'build'])
 	// gulp.watch('./assets/js/src/*.js', ['js'])
 })
