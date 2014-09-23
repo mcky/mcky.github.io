@@ -52,16 +52,20 @@ html {
 	}
 	&__job {
 		&__date {
-			@include span-columns(2);
+			@include span-columns(12);
+			@include med-span-columns(2);
 			margin-top: 0;
 			color: #999;
 			font-weight: normal;
 		}
 
 		&__info {
-			@include span-columns(10);
-			@include omega();
+			@include span-columns(12);
+			@include med-span-columns(10);
 			margin-bottom: 1rem;
+			@include breakpoint(medium) {
+				@include omega();
+			}
 		}
 
 		&__place {
