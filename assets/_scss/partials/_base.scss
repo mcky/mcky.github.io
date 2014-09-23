@@ -1,8 +1,11 @@
-body {
+.wrapper {
 	position: absolute;
 	top: 50%;
 	left: 2rem;
 	transform: translateY(-50%);
+}
+html {
+	position: initial!important;
 }
 .main,
 .header,
