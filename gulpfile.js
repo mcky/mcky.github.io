@@ -58,7 +58,7 @@ gulp.task('dist', function() {
 gulp.task('default', ['sass', 'browser-sync'], function () {
 	gulp.start('sass', 'serve', 'build');
 	gulp.watch('./*.yml', ['build'])
-	gulp.watch(['./{_layouts, _includes}/*.html', './{index,about}.md','./_posts/*.md', '!./_site/**/*.html'], ['build'])
+	gulp.watch(['./{_layouts, _includes}/*.html', './{index,about,cv}.{md,html}','./_posts/*.md', '!./_site/**/*.html'], ['build'])
 	gulp.watch('./assets/_scss/**/*.scss', ['sass', 'build'])
 	// gulp.watch('./assets/js/src/*.js', ['js'])
 })

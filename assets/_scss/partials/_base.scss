@@ -1,12 +1,22 @@
+html {
+	position: initial!important;
+}
+
 .wrapper {
 	position: absolute;
 	top: 50%;
 	left: 2rem;
 	transform: translateY(-50%);
 }
-html {
-	position: initial!important;
+
+.header {
+	&__title {
+		&__page {
+			color: #777;
+		}
+	}
 }
+
 .main,
 .header,
 .footer {
@@ -18,14 +28,6 @@ html {
 	margin-right: .5rem;
 }
 
-.primaryNav {
-	&__list {
-		&__item {
-			@extend %list-item;
-		}
-	}
-}
-
 .footer {
 	&__social {
 		&__item {
@@ -34,3 +36,40 @@ html {
 	}
 }
 
+
+.cv {
+	padding: 1.5rem 0;
+
+	&__section {
+		&__title {
+			padding-bottom: .3rem;
+			border-bottom: 1px solid #777;
+		}
+	}
+
+	&__list {
+		@include row();
+	}
+	&__job {
+		&__date {
+			@include span-columns(2);
+			margin-top: 0;
+			color: #999;
+			font-weight: normal;
+		}
+
+		&__info {
+			@include span-columns(10);
+			@include omega();
+			margin-bottom: 1rem;
+		}
+
+		&__place {
+			font-size: 1.3em;
+		}
+
+		&__description {
+			max-width: 40rem;
+		}
+	}
+}
