@@ -21,7 +21,7 @@
 	}
 	, {
 		"title": "MeasureYourImpact"
-		, "url": "http://staging-measureyourimpact.co.uk"
+		, "url": "http://staging-measureyourimpact.herokuapp.com"
 		, "description": "A tool to help non profits measure their impact"
 	}
 	, {
