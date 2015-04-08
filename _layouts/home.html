@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 	{% include head.html %}
-	<body>
+	<body class="home">
 		<div class="wrapper">
-			{% include header.html %}
+			<h1 class="header__title">
+				{{ site.title }}
+			</h1>
 
 			<main class="main">
 				{{ content }}

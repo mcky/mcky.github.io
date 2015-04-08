@@ -1,0 +1,26 @@
+[
+	{
+		"company": "WhatLeadsTo"
+		, "title": "Full stack developer"
+		, "description": "Desc"
+		, "date": "03 - 04/2015"
+	}
+	, {
+		"company": "Kota Creative"
+		, "title": "Lead developer"
+		, "description": "Desc"
+		, "date": "03 - 09/2014"
+	}
+	, {
+		"company": "Converge Collective"
+		, "title": "Web designer & developer"
+		, "description": "Desc"
+		, "date": "05 - 09/2013"
+	}
+	, {
+		"company": "FuelStory"
+		, "title": "Web designer & developer"
+		, "description": "Desc"
+		, "date": "03 - 05/2013"
+	}
+]

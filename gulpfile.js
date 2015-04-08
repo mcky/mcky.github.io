@@ -2,63 +2,53 @@ var gulp = require('gulp')
 		, sass = require('gulp-sass')
 		, uncss = require('gulp-uncss')
 		, browserSync = require('browser-sync')
-		, prefix = require('gulp-autoprefixer')
-		, cssshrink = require('gulp-cssshrink')
+		, autoprefixer = require('gulp-autoprefixer')
+		, cssmin = require('gulp-cssmin')
 		, cmq = require('gulp-combine-media-queries')
-		, uglify = require('gulp-uglifyjs')
-		, glob = require('glob')
 		, shell = require('gulp-shell')
+		, reload = browserSync.reload
 
-gulp.task('build', shell.task([ 'jekyll build' ]));
-
-gulp.task('serve', shell.task([ 'jekyll serve' ]));
+gulp.task('build', shell.task([ 'jekyll build' ]))
 
 gulp.task('sass', function() {
-	gulp.src('./assets/_scss/*.scss')
-		.pipe(sass(
-			{errLogToConsole: true}
-		))
-		.pipe(prefix("last 5 versions", "> 5%"))
-		.pipe(gulp.dest('./assets'))
-})
-
-gulp.task('js', function() {
-	gulp.src('./assets/js/_src/*.js')
-		.pipe(uglify('*.min.js'))
-		.pipe(gulp.dest('./assets/js'))
-})
-
-gulp.task('browser-sync', function() {
-	browserSync.init(['./_site/**/*.{html,js,css}'], {
-		proxy: 'mcky.dev',
-		ghostMode: {
-			clicks: false,
-			links: false,
-			forms: true,
-			scroll: true
-		}
-	})
-})
-
-gulp.task('dist', function() {
-	gulp.src('./assets/_scss/*.scss')
-		.pipe(sass(
-			{errLogToConsole: true}
-		))
-		.pipe(prefix("last 5 versions", "> 5%"))
-		.pipe(cmq())
-
-		.pipe(uncss({
-			html: glob.sync('./**/*.html')
+	return gulp.src('./assets/_scss/*.scss')
+		.pipe(sass({
+			errLogToConsole: true
+			,includePaths: require('node-neat').includePaths
 		}))
-		.pipe(cssshrink())
+		.pipe(autoprefixer())
 		.pipe(gulp.dest('./assets'))
+		.pipe(gulp.dest('./_site/assets'))
+		.pipe(reload({stream: true}))
 })
 
-gulp.task('default', ['sass', 'browser-sync'], function () {
-	gulp.start('sass', 'serve', 'build');
-	gulp.watch('./*.yml', ['build'])
-	gulp.watch(['./{_layouts, _includes}/*.html', './{index,about,cv}.{md,html}','./_posts/*.md', '!./_site/**/*.html'], ['build'])
-	gulp.watch('./assets/_scss/**/*.scss', ['sass', 'build'])
-	// gulp.watch('./assets/js/src/*.js', ['js'])
+
+gulp.task('serve', ['build'], function() {
+	browserSync({
+        server: {
+            baseDir: "./_site"
+        }
+    })
+
+	gulp.watch('./assets/_scss/**/*.scss', ['sass'])
+	gulp.watch(['./*.html', './_layouts/**/*.html', './_includes/**/*.html', './_data/*.json'], ['build'])
+	gulp.watch('./_site/**/*.html').on('change', reload)
 })
+
+gulp.task('dist', ['build'], function() {
+	gulp.src('./assets/_scss/*.scss')
+		.pipe(sass({
+			errLogToConsole: true
+			,includePaths: require('node-neat').includePaths
+		}))
+		.pipe(autoprefixer())
+		.pipe(cmq())
+		.pipe(uncss({
+			html: ['./_site/**/*.html']
+		}))
+		.pipe(cssmin())
+		.pipe(gulp.dest('./_site/assets'))
+})
+
+gulp.task('default', ['serve'])
+

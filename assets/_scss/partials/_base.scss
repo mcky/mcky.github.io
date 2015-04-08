@@ -2,6 +2,11 @@ html {
 	position: initial!important;
 }
 
+body {
+	margin: 0;
+	padding: 3rem 1rem;
+}
+
 .wrapper {
 	position: absolute;
 	top: 50%;
@@ -10,9 +15,35 @@ html {
 }
 
 .header {
+	@include clearfix;
 	&__title {
-		&__page {
-			color: #777;
+		font-size: 2.3em;
+		float: left;
+		margin-bottom: 2rem;
+		display: inline-block;
+
+		.home & {
+			margin-bottom: 0.2em;
+		}
+	}
+}
+
+.nav {
+	float: right;
+	padding-top: .9rem;
+	// display: inline-block;
+	&__item {
+		display: inline-block;
+		&:not(:last-of-type) {
+			margin-right: .5rem;
+		}
+		.icon {
+			width: 1.5rem;
+			height: 1.5rem;
+			fill: #888;
+			&:hover, &:active {
+				fill: darken(#888, 10%);
+			}
 		}
 	}
 }
@@ -20,60 +51,102 @@ html {
 .main,
 .header,
 .footer {
-	@include outer-container;
-}
+	@include breakpoint(medium) {
+		padding: 0;
+		@include outer-container(70%);
 
-%list-item {
-	display: inline;
-	margin-right: .5rem;
+		.home & {
+			@include outer-container;
+		}
+	}
+
+	@include breakpoint(large) {
+		@include outer-container(70%);
+	}
 }
 
 .footer {
 	&__social {
 		&__item {
-			@extend %list-item;
+			display: inline;
+			margin-right: .5rem;
 		}
 	}
 }
 
-
 .cv {
-	padding: 1.5rem 0;
-
+	font-size: 0.9em;
 	&__section {
+		@include row;
+		padding: 2rem 0;
+		border-top: 1px solid #dedede;
+		&:last-of-type {
+			border-bottom: 1px solid #ccc;
+		}
 		&__title {
-			padding-bottom: .3rem;
-			border-bottom: 1px solid #777;
+			@include large-span-columns(4);
+			font-size: 1.5em;
+		}
+		&__body {
+			@include large-span-columns(8);
 		}
 	}
+}
 
-	&__list {
-		@include row();
+.job {
+	&__date {
+		font-weight: normal;
+		margin-right: .5rem;
 	}
-	&__job {
-		&__date {
-			@include span-columns(12);
-			@include med-span-columns(2);
-			margin-top: 0;
-			color: #999;
-			font-weight: normal;
+
+	&__company {
+		margin-right: .3rem;
+	}
+
+	&__title {
+		font-weight: normal;
+		color: #888;
+	}
+}
+
+.reference {
+	margin: 0 0 1rem 0;
+	&__body {
+		margin: 0;
+	}
+
+	&__referee {
+		font-size: 0.9em;
+		color: #555;
+	}
+
+	&__refereeTitle {
+		font-size: 0.9em;
+		color: #888;
+	}
+}
+
+.portfolio {
+	&__item {
+		@include med-span-columns(6);
+		@include large-span-columns(4);
+		margin-bottom: 1rem;
+		@include breakpoint(medium) {
+			@include omega(2n);
 		}
 
-		&__info {
-			@include span-columns(12);
-			@include med-span-columns(10);
-			margin-bottom: 1rem;
-			@include breakpoint(medium) {
-				@include omega();
-			}
+		@include breakpoint(large) {
+			@include omega-reset(2n);
+			@include omega(3n);
 		}
 
-		&__place {
-			font-size: 1.3em;
+		&__link {
+			display: block;
+			color: inherit;
 		}
 
-		&__description {
-			max-width: 40rem;
+		&__header {
+			margin-bottom: 0.1rem;
 		}
 	}
 }

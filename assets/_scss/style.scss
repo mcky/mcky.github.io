@@ -1,15 +1,16 @@
 @charset "UTF-8";
 
+@import "partials/variables";
+
 @import
-	"bourbon/bourbon"
-	, "bitters/bitters"
-	, "neat/neat"
+	"bourbon"
+	, "bitters/base"
+	, "neat"
 	;
 
 @import
 	"partials/variables"
 	, "partials/mediaqueries"
 	, "partials/helpers"
-	, "partials/normalize"
 	, "partials/base"
 	;
