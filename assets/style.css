@@ -206,6 +206,8 @@ body {
   display: inline-block; }
   .home .header__title {
     margin-bottom: 0.2em; }
+.header__link {
+  color: inherit; }
 
 .nav {
   float: right;
