@@ -241,15 +241,6 @@ body {
         clear: both;
         content: "";
         display: table; } }
-@media only screen and (min-width:64.063em) {
-  .main, .header, .footer {
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto; }
-    .main::after, .header::after, .footer::after {
-      clear: both;
-      content: "";
-      display: table; } }
 
 .footer__social__item {
   display: inline;
@@ -266,7 +257,7 @@ body {
       content: "";
       display: table; }
     .cv__section:last-of-type {
-      border-bottom: 1px solid #ccc; }
+      border-bottom: 1px solid #dedede; }
     .cv__section__title {
       font-size: 1.5em; }
       @media only screen and (min-width:64.063em) {
@@ -301,7 +292,7 @@ body {
     margin: 0; }
   .reference__referee {
     font-size: 0.9em;
-    color: #555; }
+    color: #6f6f6f; }
   .reference__refereeTitle {
     font-size: 0.9em;
     color: #888; }

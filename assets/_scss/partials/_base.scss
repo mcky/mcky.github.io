@@ -35,7 +35,6 @@ body {
 .nav {
 	float: right;
 	padding-top: .9rem;
-	// display: inline-block;
 	&__item {
 		display: inline-block;
 		&:not(:last-of-type) {
@@ -44,9 +43,9 @@ body {
 		.icon {
 			width: 1.5rem;
 			height: 1.5rem;
-			fill: #888;
+			fill: $text-subtle;
 			&:hover, &:active {
-				fill: darken(#888, 10%);
+				fill: darken($text-subtle, 10%);
 			}
 		}
 	}
@@ -62,10 +61,6 @@ body {
 		.home & {
 			@include outer-container;
 		}
-	}
-
-	@include breakpoint(large) {
-		@include outer-container(70%);
 	}
 }
 
@@ -85,7 +80,7 @@ body {
 		padding: 2rem 0;
 		border-top: 1px solid #dedede;
 		&:last-of-type {
-			border-bottom: 1px solid #ccc;
+			border-bottom: 1px solid #dedede;
 		}
 		&__title {
 			@include large-span-columns(4);
@@ -109,7 +104,7 @@ body {
 
 	&__title {
 		font-weight: normal;
-		color: #888;
+		color: $text-subtle;
 	}
 }
 
@@ -121,12 +116,12 @@ body {
 
 	&__referee {
 		font-size: 0.9em;
-		color: #555;
+		color: darken($text-subtle, 10%);
 	}
 
 	&__refereeTitle {
 		font-size: 0.9em;
-		color: #888;
+		color: $text-subtle;
 	}
 }
 
