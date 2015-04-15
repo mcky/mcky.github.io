@@ -2,31 +2,31 @@
 	{
 		"title": "Pho"
 		, "url": "http://phocafe.co.uk"
-		, "description": "Website for a chain of Vietnamese restaurants"
+		, "description": "A website for a chain of Vietnamese restaurants"
 	}
 	, {
 		"title": "Lost & Co"
 		, "url": "http://lostputney.co.uk"
-		, "description": "Website for Lost & Co Putney"
+		, "description": "A microsite for a Putney based bar"
 	}
 	, {
 		"title": "Lost Angel"
 		, "url": "lostangel.kotadev.co.uk"
-		, "description": "Website for Lost Angel & Gaslight Grill"
+		, "description": "A microsite for a bar and restaurant in Battersea"
 	}
 	, {
 		"title": "Kai"
 		, "url": "http://www.kaidesign.co.uk/"
-		, "description": "Website for an interior design consultancy"
+		, "description": "A Website for an interior design consultancy"
 	}
 	, {
 		"title": "MeasureYourImpact"
 		, "url": "http://staging-measureyourimpact.herokuapp.com"
-		, "description": "A tool to help non profits measure their impact"
+		, "description": "[Beta] A tool to help non profits measure their impact"
 	}
 	, {
-		"title": "Actionally toolkit"
-		, "url": "http://github.com/mcky/Actionally-toolkit"
-		, "description": "A CLI for extending and working with Actionally"
+		"title": "More on Github &raquo;"
+		, "url": "http://github.com/mcky/"
+		, "description": ""
 	}
 ]
