@@ -96,6 +96,10 @@ body {
 	&__date {
 		font-weight: normal;
 		margin-right: .5rem;
+
+		&--short {
+			padding-left: 1.9rem;
+		}
 	}
 
 	&__company {
