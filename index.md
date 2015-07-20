@@ -3,4 +3,4 @@ title: Home
 layout: home
 ---
 
-Front end developer.
+Full stack developer.
