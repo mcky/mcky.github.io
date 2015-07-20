@@ -374,6 +374,18 @@ body {
       margin-right: 0; }
     .portfolio__item:nth-child(3n+1) {
       clear: left; } }
+  @media print {
+    .portfolio__item {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .portfolio__item:last-child {
+        margin-right: 0; }
+      .portfolio__item:nth-child(2n) {
+        margin-right: 0; }
+      .portfolio__item:nth-child(2n+1) {
+        clear: left; } }
   .portfolio__item__link {
     display: block;
     color: inherit; }

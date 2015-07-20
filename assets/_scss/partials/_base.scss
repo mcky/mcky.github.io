@@ -143,6 +143,11 @@ body {
 			@include omega(3n);
 		}
 
+		@media print {
+			@include span-columns(6);
+			@include omega(2n);
+		}
+
 		&__link {
 			display: block;
 			color: inherit;
