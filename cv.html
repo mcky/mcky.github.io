@@ -21,11 +21,11 @@ layout: cv
 			{% for job in site.data.jobs %}
 				<li class="cv__list__item job">
 					<h3 class="job__header">
-						{% assign varname = 'job__date' %}
+						{% assign jobDateClass = 'job__date' %}
 						{% if job.date.size == 7 %}
-							{% capture varname %}{{ varname }} {{ varname }}--short{% endcapture %}
+							{% capture jobDateClass %}{{ jobDateClass }} {{ jobDateClass }}--short{% endcapture %}
 						{% endif %}
-						<span class="{{ varname }}">{{ job.date }}</span>
+						<span class="{{ jobDateClass }}">{{ job.date }}</span>
 						<span class="job__company">{{ job.company }}</span>
 						<span class="job__title">({{ job.title }})</span>
 					</h3>
