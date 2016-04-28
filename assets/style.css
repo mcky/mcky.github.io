@@ -1,1 +1,76 @@
-body,html{font-family:Menlo,monospace;font-size:14px;font-size:13px;color:#222;line-height:1.3}body{max-width:650px;margin:0 auto 0 0;padding:2rem}h1,h2,h3,h4,p{font-size:1rem;margin-top:0}em,h1,h2,h3,h4{font-weight:600;font-style:normal;color:#222}h1:before,h2:before,h3:before,h4:before{display:inline;font-style:italic;margin-right:.3em}h1:before{content:"#"}h2:before{content:"##"}h3:before{content:"###"}h4:before{content:"####"}h1{font-size:1.5rem;margin-bottom:2rem}h2{font-size:1.05em}h2,h3,p{margin-bottom:.75rem}p{color:#444;margin-top:0}p+h2{margin-top:3rem}p+h3{margin-top:2rem}a{color:#5ca4da}a:active,a:focus,a:hover{color:#2b7fbe}blockquote{margin-left:0}blockquote,blockquote p:last-of-type{margin-bottom:0}blockquote+p{font-style:italic;margin-top:.5rem;margin-bottom:1.5rem;color:#888}
+html, body {
+  font-family: Menlo, monospace;
+  font-size: 16px;
+  color: #222;
+  line-height: 1.3; }
+  @media (min-device-width: 768px) {
+    html, body {
+      font-size: 13px; } }
+
+body {
+  max-width: 650px;
+  margin: 0 auto 0 0;
+  padding: 1rem; }
+  @media (min-device-width: 768px) {
+    body {
+      padding: 2rem; } }
+
+p, h1, h2, h3, h4 {
+  font-size: 1rem;
+  margin-top: 0; }
+
+em, h1, h2, h3, h4 {
+  font-weight: 600;
+  font-style: normal;
+  color: #222; }
+
+h1:before, h2:before, h3:before, h4:before {
+  display: inline;
+  font-style: italic;
+  margin-right: .3em; }
+
+h1:before {
+  content: "#"; }
+
+h2:before {
+  content: "##"; }
+
+h3:before {
+  content: "###"; }
+
+h4:before {
+  content: "####"; }
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem; }
+
+h2 {
+  font-size: 1.05em; }
+
+p, h2, h3 {
+  margin-bottom: .75rem; }
+
+p {
+  color: #444;
+  margin-top: 0; }
+  p + h2 {
+    margin-top: 3rem; }
+  p + h3 {
+    margin-top: 2rem; }
+
+a {
+  color: #5CA4DA; }
+  a:hover, a:focus, a:active {
+    color: #2b7fbe; }
+
+blockquote {
+  margin-left: 0;
+  margin-bottom: 0; }
+  blockquote p:last-of-type {
+    margin-bottom: 0; }
+  blockquote + p {
+    font-style: italic;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    color: #888888; }
