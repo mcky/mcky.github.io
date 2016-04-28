@@ -21,8 +21,8 @@ _website_: [{{ site.url }}](http://{{ site.url }})
 _email_: [{{ site.email }}](mailto:{{ site.email }})  
 _mobile_: [{{ site.phone }}](tel:{{ site.phone }})  
 
-_github_: [{{ site.github }}](http://github.com/{{ site.github }}){:target="_blank"},  
-_twitter_: [@{{ site.twitter }}](http://twitter.com/{{ site.twitter }}){:target="_blank"},  
+_github_: [{{ site.github }}](http://github.com/{{ site.github }}){:target="_blank"}  
+_twitter_: [@{{ site.twitter }}](http://twitter.com/{{ site.twitter }}){:target="_blank"}  
 
 Contracts only - preferrably React, no Angular or Wordpress.
 
