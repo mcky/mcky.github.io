@@ -21,8 +21,8 @@ _website_: [rossmackay.co](http://rossmackay.co)
 _email_: [ross@rossmackay.co](mailto:ross@rossmackay.co)  
 _mobile_: [07805284648](tel:07805284648)  
 
-_github_: [mcky](http://github.com/mcky)  
-_twitter_: [@r_mcky](http://twitter.com/r_mcky)  
+_github_: [mcky](http://github.com/mcky){:target="_blank"}  
+_twitter_: [@r_mcky](http://twitter.com/r_mcky){:target="_blank"}  
 
 Contracts only - preferrably React, no Angular or Wordpress.
 
@@ -35,13 +35,13 @@ Contracts only - preferrably React, no Angular or Wordpress.
 Shipped a host of websites, campaigns and prototypes as well as maintaining and updating legacy sites.
 
 _Clients_:
-[Smalleats](http://smalleats.com),
-[Instinctif Partners](http://instinctif.com),
-[Unmade](https://www.unmade.com),
-[The Rumpus Room](http://trr.tv),
-[The Telegraph](http://telegraph.co.uk),
-[Alan Yau](http://alanyau.com),
-[Bradley Wiggins](http://teamwiggins.co).
+[Smalleats](http://smalleats.com){:target="_blank"},
+[Instinctif Partners](http://instinctif.com){:target="_blank"},
+[Unmade](https://unmade.com){:target="_blank"},
+[The Rumpus Room](http://trr.tv){:target="_blank"},
+[The Telegraph](http://telegraph.co.uk){:target="_blank"},
+[Alan Yau](http://alanyau.com){:target="_blank"},
+[Bradley Wiggins](http://teamwiggins.co){:target="_blank"}.
 
 _Skills_: React, Node, Django, Wordpress
 
