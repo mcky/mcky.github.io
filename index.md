@@ -1,5 +1,6 @@
 ---
 title: Ross Mackay
+redirect_from: "/cv"
 ---
 # Ross Mackay
 
