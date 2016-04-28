@@ -1,16 +1,96 @@
-@charset "UTF-8";
+$lightBlue: #5CA4DA;
 
-@import "partials/variables";
+html, body {
+	// font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif
+	font-family: Menlo, monospace;
+	font-size: 14px;
+	font-size: 13px;
+	color: #222;
+	line-height: 1.3;
+}
 
-@import
-	"bourbon"
-	, "bitters/base"
-	, "neat"
-	;
+body {
+	max-width: 650px;
+	margin: 0 auto 0 0;
+	padding: 2rem;
+}
 
-@import
-	"partials/variables"
-	, "partials/mediaqueries"
-	, "partials/helpers"
-	, "partials/base"
-	;
+p, h1, h2, h3, h4 {
+	font-size: 1rem;
+	margin-top: 0;
+}
+
+em, h1, h2, h3, h4 {
+	font-weight: 600;
+	font-style: normal;
+	color: #222;
+}
+
+h1, h2, h3, h4 {
+	&:before {
+		display: inline;
+		font-style: italic;
+		margin-right: .3em;
+	}
+}
+
+@for $i from 1 through 4 {
+	$content: "";
+	@for $n from 1 through $i { $content: $content + '#'; }
+
+	h#{$i}:before {
+		content: $content;
+	}
+}
+
+h1 {
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+h2 {
+	font-size: 1.05em;
+}
+
+p, h2, h3 {
+	margin-bottom: .75rem;
+}
+
+p {
+	color: #444;
+	margin-top: 0;
+
+	&+ h2 {
+		margin-top: 3rem;
+	}
+
+	&+ h3 {
+		margin-top: 2rem;
+	}
+}
+
+a {
+	color: $lightBlue;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: darken($lightBlue, 15%);
+	}
+}
+
+blockquote {
+	margin-left: 0;
+	margin-bottom: 0;
+
+	p:last-of-type {
+		margin-bottom: 0;
+	}
+
+	+ p {
+		font-style: italic;
+		margin-top: .5rem;
+		margin-bottom: 1.5rem;
+		color: lighten(#222, 40%);
+	}
+}

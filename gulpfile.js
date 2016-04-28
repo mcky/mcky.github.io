@@ -1,25 +1,22 @@
 var gulp = require('gulp')
-		, sass = require('gulp-sass')
-		, uncss = require('gulp-uncss')
 		, browserSync = require('browser-sync')
-		, autoprefixer = require('gulp-autoprefixer')
-		, cssmin = require('gulp-cssmin')
-		, cmq = require('gulp-combine-media-queries')
-		, shell = require('gulp-shell')
-		, reload = browserSync.reload
+		, runSequence = require('run-sequence')
+		, gp = require('gulp-load-plugins')()
 
-gulp.task('build', shell.task([ 'jekyll build' ]))
+var deploy = false
 
-gulp.task('sass', function() {
+gulp.task('build', gp.shell.task([ 'jekyll build' ]))
+
+gulp.task('styles', function() {
 	return gulp.src('./assets/_scss/*.scss')
-		.pipe(sass({
+		.pipe(gp.sass({
 			errLogToConsole: true
-			,includePaths: require('node-neat').includePaths
 		}))
-		.pipe(autoprefixer())
+		.pipe(gp.autoprefixer())
+		.pipe(gp.if(deploy, gp.cssnano()))
 		.pipe(gulp.dest('./assets'))
 		.pipe(gulp.dest('./_site/assets'))
-		.pipe(reload({stream: true}))
+		.pipe(browserSync.reload({stream: true}))
 })
 
 
@@ -30,24 +27,14 @@ gulp.task('serve', ['build'], function() {
         }
     })
 
-	gulp.watch('./assets/_scss/**/*.scss', ['sass'])
-	gulp.watch(['./*.html', './_layouts/**/*.html', './_includes/**/*.html', './_data/*.json'], ['build'])
-	gulp.watch('./_site/**/*.html').on('change', reload)
+	gulp.watch('./assets/_scss/**/*.scss', ['styles'])
+	gulp.watch(['./**/*.{html,md}', '!./_site/**/*'], ['build'])
+	gulp.watch('./_site/**/*.html').on('change', browserSync.reload)
 })
 
-gulp.task('dist', ['build'], function() {
-	gulp.src('./assets/_scss/*.scss')
-		.pipe(sass({
-			errLogToConsole: true
-			,includePaths: require('node-neat').includePaths
-		}))
-		.pipe(autoprefixer())
-		.pipe(cmq())
-		.pipe(uncss({
-			html: ['./_site/**/*.html']
-		}))
-		.pipe(cssmin())
-		.pipe(gulp.dest('./_site/assets'))
+gulp.task('dist', function() {
+	deploy = true
+	runSequence(['build', 'styles'])
 })
 
 gulp.task('default', ['serve'])
