@@ -1,11 +1,12 @@
 # Site settings
 title: Ross Mackay
 email: ross@rossmackay.co
+phone: 07805284648
 description: "Ross Mackay"
 baseurl: ""
-url: "http://rossmackay.co"
-twitter_username: r_mcky
-github_username:  mcky
+url: "rossmackay.co"
+twitter: r_mcky
+github:  mcky
 
 exclude: [node_modules, package.json, gulpfile.js, CNAME]
 defaults:

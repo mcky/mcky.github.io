@@ -17,12 +17,12 @@ My preferred technologies are React, Node and sass, but I've got experience inte
 
 ## Contact
 
-_website_: [rossmackay.co](http://rossmackay.co)  
-_email_: [ross@rossmackay.co](mailto:ross@rossmackay.co)  
-_mobile_: [07805284648](tel:07805284648)  
+_website_: [{{ site.url }}](http://{{ site.url }})  
+_email_: [{{ site.email }}](mailto:{{ site.email }})  
+_mobile_: [{{ site.phone }}](tel:{{ site.phone }})  
 
-_github_: [mcky](http://github.com/mcky){:target="_blank"}  
-_twitter_: [@r_mcky](http://twitter.com/r_mcky){:target="_blank"}  
+_github_: [{{ site.github }}](http://github.com/{{ site.github }}){:target="_blank"},  
+_twitter_: [@{{ site.twitter }}](http://twitter.com/{{ site.twitter }}){:target="_blank"},  
 
 Contracts only - preferrably React, no Angular or Wordpress.
 
