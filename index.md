@@ -21,7 +21,6 @@ My preferred technologies are React, Node and sass, but I've got experience inte
 
 _website_: [{{ site.url }}](http://{{ site.url }})  
 _email_: [{{ site.email }}](mailto:{{ site.email }})  
-_mobile_: [{{ site.phone }}](tel:{{ site.phone }})  
 
 _github_: [{{ site.github }}](http://github.com/{{ site.github }}){:target="_blank"}  
 _twitter_: [@{{ site.twitter }}](http://twitter.com/{{ site.twitter }}){:target="_blank"}  
