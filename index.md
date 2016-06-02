@@ -36,6 +36,7 @@ Contracts only - preferrably React, no Angular or Wordpress.
 Shipped a host of websites, campaigns and prototypes as well as maintaining and updating legacy sites.
 
 _Clients_:
+[StinkDigital](http://stinkdigital.com){:target="_blank"},
 [Smalleats](http://smalleats.com){:target="_blank"},
 [Instinctif Partners](http://instinctif.com){:target="_blank"},
 [Unmade](https://unmade.com){:target="_blank"},
