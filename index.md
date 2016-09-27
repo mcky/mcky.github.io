@@ -37,7 +37,7 @@ Shipped a host of websites, campaigns and prototypes as well as maintaining and 
 
 _Clients_:
 [StinkDigital](http://stinkdigital.com){:target="_blank"},
-[Smalleats](http://smalleats.com){:target="_blank"},
+[2PAx](http://2pax.com){:target="_blank"},
 [Instinctif Partners](http://instinctif.com){:target="_blank"},
 [Unmade](https://unmade.com){:target="_blank"},
 [The Rumpus Room](http://trr.tv){:target="_blank"},
