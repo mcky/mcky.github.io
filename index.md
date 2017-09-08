@@ -36,6 +36,7 @@ Contracts only - preferrably React, no Angular or Wordpress.
 Shipped a host of websites, campaigns and prototypes as well as maintaining and updating legacy sites.
 
 _Clients_:
+[Ekino](https://www.ekino.com/en/){:target="_blank"},
 [Beamly](https://www.beamly.com){:target="_blank"},
 [StinkDigital](http://stinkdigital.com){:target="_blank"},
 [2PAx](http://2pax.com){:target="_blank"},
