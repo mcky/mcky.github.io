@@ -29,21 +29,46 @@ Contracts only - preferrably React, no Angular or Wordpress.
 ## Work
 
 ### Contracting (07/2015 - Present)
-Shipped a host of websites, campaigns and prototypes as well as maintaining and updating legacy sites.
+**Clients**:
 
-_Clients_:
-[Ekino](https://www.ekino.com/en/){:target="_blank"},
-[Beamly](https://www.beamly.com){:target="_blank"},
-[StinkDigital](http://stinkdigital.com){:target="_blank"},
-[2PAx](http://2pax.com){:target="_blank"},
-[Instinctif Partners](http://instinctif.com){:target="_blank"},
-[Unmade](https://unmade.com){:target="_blank"},
-[The Rumpus Room](http://trr.tv){:target="_blank"},
-[The Telegraph](http://telegraph.co.uk){:target="_blank"},
-[Alan Yau](http://alanyau.com){:target="_blank"},
-[Bradley Wiggins](http://teamwiggins.co){:target="_blank"}.
+[Moteefe](https://www.moteefe.com/){:target="_blank"}  
+Building components for use across marketing and ecommerce platforms.  
+*Skills:* React, Jest, Styled components
 
-_Skills_: React, Node, Django, Wordpress
+[Ekino](https://www.ekino.com/en/){:target="_blank"}  
+Building a financial dashboard powered by a modular CMS, integrating with both new and legacy APIs.  
+*Skills:* React, Component-driven development
+
+[Beamly](https://www.beamly.com){:target="_blank"}  
+Building the platform to power the next generation of marketing sites for a range of household beauty & fragrance companies.  
+*Skills:* Node, Chai, Cucumber
+
+[StinkDigital](http://stinkdigital.com){:target="_blank"}  
+Creating cutting-edge digital experiences including a digital treasure-trail housed in a web-based OS and a webGL + AI-powered fashion designer.  
+*Skills:* React, Redux, websockets, adapting projects for installations, OS.js
+
+[2PAx](http://2pax.com){:target="_blank"}  
+Built both the prototype and v1 of a real-time restaurant management platform.  
+*Skills:* React, Redux, websockets, Stripe
+
+[Instinctif Partners](http://instinctif.com){:target="_blank"}  
+Both redeveloping a legacy site whilst creating a component-library for use in microsites.  
+*Skills:* ES6, Jekyll, Wordpress
+
+[Unmade](https://unmade.com){:target="_blank"}  
+Creating and standardizing the component library for use across marketing & ecommerce.  
+*Skills:* ES6, CSS, Static-site generators, accessible & responsive design
+
+[The Rumpus Room](http://trr.tv){:target="_blank"}  
+Building large scale innovative campaigns for clients such as the UN, sporting celebreties and musicians. Rapid prototyping of campaigns in conjunction with creatives.  
+*Skills:* React, Redux, prototyping
+
+[The Telegraph](http://telegraph.co.uk){:target="_blank"}  
+Developed a tool for journalists to enrich articles with contextual information, with similar tools now used by many big name digital news sites.  
+*Skills:* React, Bootstrap, UX, prototyping
+
+[Alan Yau](http://alanyau.com){:target="_blank"}  
+[Bradley Wiggins](http://teamwiggins.co){:target="_blank"}  
 
 ### WhatLeadsTo (03 - 06/2015)
 Built the early stages of a platform to help charities and business better measure and report their social impact. Worked closely with designers and stakeholders to rapidly prototype and test features.
