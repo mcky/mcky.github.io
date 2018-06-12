@@ -8,13 +8,9 @@ redirect_from:
 
 ## About
 
-I'm a London based developer, specialising in front-end, with full-stack, product and hardware experience. I've got a keen interest in UX, rapid prototyping and creative uses of technology.
+I'm a London based web developer, specialising in front-end, with full-stack, product and hardware experience, usually working between the fast-paced worlds of agencies and product startups. I'm happiest writing clean, functional code powering seamless user experiences.
 
-I work mostly with startups and agencies and produce my best work when collaborating closely with designers and back-end developers, ideally with some input in product design/direction.
-
-My preferred technologies are React, Node and sass, but I've got experience integrating with Django/Rails apps and prototyping in Swift, Arduino and Python. Recently I've been aiming to improve my functional programming skills and trying to practice component/style-guide driven design and development.
-
-
+These days I'm usually writing React (+ redux etc) or node commercially, but I've got experience integrating with and prototyping in wide range of stacks/languages.
 
 
 ## Contact
