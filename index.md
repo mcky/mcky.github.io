@@ -78,24 +78,3 @@ _Skills_: Creative coding, hardware, motion graphics, 3D, video editing
 South Nottingham College
 
 _Skills_: Web development & design, animation, video production
-
-
-
-
-## References
-
-> Ross is a tremendously talented, young web designer. His depth of knowledge in all things web belies his age and is testimony to an incredible mind. His enthusiasm to get involved and learn new things in invaluable. Working with Ross is always a hugely rewarding experience.
-
-– William Buckley
-
-> Ross is the sort of young designer that exemplifies the new generation of marketers and communicators.  He is personable, friendly and an easy fit for the team and any future teams would be lucky to have him.
-
-– Peter Thomson
-
-> Ross has proved himself as a key player in our team, whether in his ability to approach challenges and deliver a product, or as a friendly and responsive communicator. In his time with us, he has helped us not only transform and revive a 60-year-old brand, but also helped us transition to a digital-forward approach in our collective practice.
-
-– Ed Ive
-
-> Ross has impressed me with his knowledge of design, typography and web development. He has a great attitude, he gets stuck into any project and fully owns the task with clear communication on estimates, plan of attack and deliverables. I highly recommend working with Ross and I look forward to continuing to work with Ross and seeing his career and ambitions develop.
-
-– Klaus Bravenboer
