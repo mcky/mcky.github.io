@@ -31,8 +31,12 @@ Contracts only - preferrably React, no Angular or Wordpress.
 ### Contracting (07/2015 - Present)
 **Clients**:
 
+[Huge](http://hugeinc.com){:target="_blank"}  
+Leading a team to build the first stages of a digital publishing platform for a major entertainment franchise.
+*Skills: React (SSR), GraphQL, Node, Contentful/headless CMS, Jest, CSS Modules*
+
 [Moteefe](https://www.moteefe.com/){:target="_blank"}  
-Building components for use across marketing and ecommerce platforms.  
+Building components for use across the clients ecommerce and marketing platforms.  
 *Skills: React, Jest, Styled components*
 
 [Ekino](https://www.ekino.com/en/){:target="_blank"}  
