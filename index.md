@@ -32,7 +32,7 @@ Contracts only - preferrably React, no Angular or Wordpress.
 **Clients**:
 
 [Huge](http://hugeinc.com){:target="_blank"}  
-Leading a team to build the first stages of a digital publishing platform for a major entertainment franchise.
+Leading a team to build the first stages of a digital publishing platform for a major entertainment franchise.  
 *Skills: React (SSR), GraphQL, Node, Contentful/headless CMS, Jest, CSS Modules*
 
 [Moteefe](https://www.moteefe.com/){:target="_blank"}  
