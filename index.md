@@ -28,12 +28,16 @@ Contracts only - preferrably React, no Angular or Wordpress.
 
 ## Work
 
-### Contracting (07/2015 - Present)
+### Contracting (2015 - Present)
 **Clients**:
+
+[Moving Brands](https://www.movingbrands.com/){:target="_blank"}  
+Description soon (under NDA)  
+*Skills: React, Gatsby.js, GraphQL, sanity.io (headless CMS), Styled components*
 
 [Huge](http://hugeinc.com){:target="_blank"}  
 Leading a team to build the first stages of a digital publishing platform for a major entertainment franchise.  
-*Skills: React (SSR), GraphQL, Node, Contentful/headless CMS, Jest, CSS Modules*
+*Skills: React (SSR), GraphQL, Node, Contentful (headless CMS), Jest, CSS Modules*
 
 [Moteefe](https://www.moteefe.com/){:target="_blank"}  
 Building components for use across the clients ecommerce and marketing platforms.  
