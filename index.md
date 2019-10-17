@@ -31,9 +31,13 @@ Contracts only - preferrably React, no Angular or Wordpress.
 ### Contracting (2015 - Present)
 **Clients**:
 
+[YunoJuno (HQ)](https://yunojuno.com){:target="_blank"}  
+Replatforming a hard-coded gatsby site to be CMS driven.   
+*Skills: React, Gatsby.js, Contentful (headless CMS)*
+
 [Moving Brands](https://www.movingbrands.com/){:target="_blank"}  
-Description soon (under NDA)  
-*Skills: React, Gatsby.js, GraphQL, sanity.io (headless CMS), Styled components*
+Building a marketing site for a california based electric vehicle company.   
+*Skills: React, Gatsby.js, sanity.io (headless CMS), Serverless framework, Styled components*
 
 [Huge](http://hugeinc.com){:target="_blank"}  
 Leading a team to build the first stages of a digital publishing platform for a major entertainment franchise.  
