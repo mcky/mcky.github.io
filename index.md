@@ -9,9 +9,9 @@ redirect_from:
 
 ## About
 
-I'm a London based full-stack developer with a breadth of experience across product startups and agencies. I enjoy writing clean, functional code powering seamless user experiences.
+I'm a London based full-stack developer with a breadth of experience across product startups and agencies. I'm happiest writing clean, functional code, solving real business needs and streamlining operations.
 
-These days I'm usually writing React or node commercially, but I've got experience integrating with and prototyping in wide range of stacks/languages.
+These days I'm usually writing React or node commercially, but I've got experience integrating with and prototyping in a wide range of stacks/languages.
 
 
 ## Contact
