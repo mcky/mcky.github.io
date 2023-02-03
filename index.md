@@ -18,11 +18,12 @@ If you're working in a functional language such as Elixir or Clojure I'd be part
 
 ## Contact
 
-_website_: [{{ site.url }}](http://{{ site.url }})  
-_email_: [{{ site.email }}](mailto:{{ site.email }})  
-
-_github_: [{{ site.github }}](http://github.com/{{ site.github }}){:target="_blank"}  
+_website:_ [{{ site.url }}](http://{{ site.url }})  
+_email:_ [{{ site.email }}](mailto:{{ site.email }})  
+_github:_ [{{ site.github }}](http://github.com/{{ site.github }}){:target="_blank"}  
+{% comment %}
 _twitter_: [@{{ site.twitter }}](http://twitter.com/{{ site.twitter }}){:target="_blank"}  
+{% endcomment %}
 
 
 
@@ -30,7 +31,6 @@ _twitter_: [@{{ site.twitter }}](http://twitter.com/{{ site.twitter }}){:target=
 ## Work
 
 ### Contracting (2015 - Present)
-**Clients**:
 
 [Oak national Academy](https://www.thenational.academy/){:target="\_blank"}  
 Over the past 2 years I've worked on and off with Oak to expand their offering via their online classroom and teacher hub. Responsibilities spanned the entire stack, from data modelling and data ingesting, to stateful UI work.  
@@ -41,7 +41,7 @@ _Skills: Next.js, Serverless architecture (GCP, Cloudflare workers), Postgres, S
 Created a web app to wrap Zappar's WebAR experience, handling all non-AR user flows and integrating with a third-party provided backend.
 
 [y'all](https://www.itsyall.com/){:target="\_blank"}  
-Implemented custom authentication across serverless stack and Next.js app. Deep sanity integration for user group and permission management.  
+Implemented a custom authentication/access control system across  the serverless stack, CMS and Next.js app. Deep sanity integration for user group and permission management.  
 _Skills: sanity.io, auth0, Next.js_
 
 [JAAM](https://letsjaam.com/){:target="\_blank"}  
@@ -135,7 +135,9 @@ _Skills: Prototyping, Front-end, Design, Research_
 London College of Communication  
 _Skills: Creative coding, hardware, motion graphics, 3D, video editing_
 
+{% comment %} 
 ### Interactive Media (2010 - 2012)
 
 South Nottingham College  
 _Skills_: Web development & design, animation, video production
+{% endcomment %}
