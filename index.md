@@ -10,10 +10,11 @@ redirect_from:
 
 ## About
 
-I'm a London based full-stack developer with a breadth of experience across product startups and agencies. I'm happiest writing clean, functional code, solving real business needs and streamlining operations.
+I'm a London based full-stack developer with a breadth of experience across industries, from early stage product startups to marketing agencies. I'm happiest writing clean, functional code, solving real business needs and streamlining operations.
 
 These days I'm usually writing React or node commercially, but I've got experience integrating with and prototyping in a wide range of stacks/languages.
 
+If you're working in a functional language such as Elixir or Clojure I'd be particularly interested to hear from you.
 
 ## Contact
 
@@ -32,8 +33,12 @@ _twitter_: [@{{ site.twitter }}](http://twitter.com/{{ site.twitter }}){:target=
 **Clients**:
 
 [Oak national Academy](https://www.thenational.academy/){:target="\_blank"}  
-Helped Oak expand their offering via their online classroom and teacher hub. Responsibilities spanned the entire stack, from data modelling and data ingesting, to stateful UI work.  
-_Skills: Next.js, Serverless architecture (GCP, Cloudflare workers), Postgres_
+Over the past 2 years I've worked on and off with Oak to expand their offering via their online classroom and teacher hub. Responsibilities spanned the entire stack, from data modelling and data ingesting, to stateful UI work.  
+Recent highlights include migrating their CMS from Contentful to Sanity during their redesign, and assisting in their transition from static rendering to Next.js' ISR mode.  
+_Skills: Next.js, Serverless architecture (GCP, Cloudflare workers), Postgres, Sanity.io_
+
+[Zappar](https://www.zappar.com/){:target="\_blank"}  
+Created a web app to wrap Zappar's WebAR experience, handling all non-AR user flows and integrating with a third-party provided backend.
 
 [y'all](https://www.itsyall.com/){:target="\_blank"}  
 Implemented custom authentication across serverless stack and Next.js app. Deep sanity integration for user group and permission management.  
@@ -57,7 +62,7 @@ _Skills: Next.js, Hapi, sanity.io_
 _Skills: Typescript (+ tsoa, typeorm, typegraphql), Next.js, React Native, Postgres_
 
 [YunoJuno (HQ)](https://yunojuno.com){:target="\_blank"}  
-Re-platformed a hard-coded gatsby site to be CMS driven.  
+Re-platformed YunoJuno's hard-coded gatsby marketing site to be CMS driven.  
 _Skills: React, Gatsby.js, Contentful_
 
 [Moving Brands](https://www.movingbrands.com/){:target="\_blank"}  
