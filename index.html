@@ -30,50 +30,68 @@
           </p>
 
           <p>
-            These days I'm usually writing React or node commercially, but I've
-            got experience integrating with and contributing to services written
-            in a wide range of stacks/languages.
+            I've been working with React, node and friends for over a decade
+            now, but I've got experience integrating with and contributing to
+            services written in a wide range of stacks/languages.
+            <span class="no-print">
+              If you're working in a functional language such as Elixir or
+              Clojure I'd be particularly interested to hear from you.
+            </span>
           </p>
 
-          <span class="noprint">
-            If you're working in a functional language such as Elixir or Clojure
-            I'd be particularly interested to hear from you.
-          </span>
-
-          <h2>Contact</h2>
-
-          <em>website:</em> <a href="http://rossmackay.co">rossmackay.co</a
-          ><br />
           <em>email:</em> <a href="mailto:hi@rossmackay.co">hi@rossmackay.co</a
           ><br />
           <em>github:</em>
-          <a href="http://github.com/mcky" target="blank">mcky</a><br />
+          <a href="https://github.com/mcky" target="blank">mcky</a><br />
 
-          <!-- <em>twitter:</em>
-          <a href="http://twitter.com/r_mcky" target="_blank">@r_mcky</a><br /> -->
-
-          <h2>Clients</h2>
+          <h2>Clients (contract)</h2>
 
           <div class="job">
             <p class="job__client">
               <a href="https://www.thenational.academy/" target="_blank"
-                >Oak national Academy</a
+                >Oak National Academy</a
               >
+              <span class="job__date">(2021-2024)</span>
             </p>
+
             <p>
-              Over the past 2 years I’ve worked on and off with Oak to expand
-              their offering via their online classroom and teacher hub.
-              Responsibilities spanned the entire stack, from data modelling and
-              ingesting, to stateful UI work.
+              <b>AI Labs</b>: In 2023 I was approached by Oak to help them take
+              their LLM experiments from prototype scripts to production
+              services. We launched 2 new AI tools to assist teachers, utilizing
+              a novel approach of streaming structured LLM responses to the
+              browser to improve the UX of long-running prompts. Productionising
+              these entailed instrumenting and adding observability, reporting,
+              custom back-office dashboards and service hardening. Ultimately
+              the experiments proved successful and Oak are now integrating the
+              AI features into their main apps.
+              <br />
+              <span class="job__skills">
+                Stack: Next.js, Postgres (w/ Prisma), Clerk, Inngest, Langhcain,
+                Retool, tRPC
+              </span>
             </p>
+
             <p>
-              Recent highlights include migrating their CMS from Contentful to
-              Sanity during their redesign, and assisting in their transition
-              from static rendering to Next.js’ ISR mode.
+              Prior to the AI project I worked with Oak on a number of different
+              projects, spanning the entirety of their tech stack. One highlight
+              was redeveloping and re-launching their asset downloads
+              experience. By enabling bulk downloads of entire lessons or
+              collections of lessons, and streamlining the (fully accessible) UI,
+              we were able to save teachers a lot of time. On the back-end, the
+              service was extended to zip bundles of assets together,
+              intelligently caching them to reduce download times.
             </p>
+            <!-- <p>
+              Migrating their CMS from Contentful to Sanity.io. I transitioned
+              them from a chaotic ad-hoc developed schema to something robust,
+              future proofed and typesafe end-to-end, backed by a modern
+              development workflow and integrated with Oak's internal asset
+              pipelines.
+              <br />
+            </p> -->
             <p class="job__skills">
-              Skills: Next.js, Serverless architecture (GCP, Cloudflare
-              workers), Postgres, Sanity.io
+              Stack: Next.js, Serverless architecture (GCP, Cloudflare workers),
+              Postgres (w/ Hasura), GraphQL, Sanity.io
             </p>
           </div>
 
@@ -83,25 +101,32 @@
               <a href="https://www.liftedcare.com/" target="_blank"
                 >Lifted care</a
               >
+              <span class="job__date">(2019-2020)</span>
             </p>
 
-            <ul>
-              <li>
-                Extended functionality of Lifted’s home-care platform, with
-                features spanning the web, APIs and mobile.
-              </li>
-              <li>
-                Assisted building a platform for rapid creation of cms-driven
-                marketing sites &amp; onboarding experiments
-              </li>
-              <li>
-                Assisted architecting and building zero-1’s startup platform.
-              </li>
-              <li>Training, mentoring and pairing with junior developers</li>
-            </ul>
+            <p>
+              Zero-1 are Corporate Venture Builder & Startup Studio, giving me
+              the opportunity to work on both their established businesses and
+              new startups.
+            </p>
+
+            <p>
+              <b>Lifted care</b>: Lifted care provide in-home care, facilitated
+              by both client and carer-facing apps and complex backoffice
+              software. I worked with Lifted to add and improve features in
+              their react native apps, react based admin webapps, carer payroll
+              calculation and reporting workflows
+            </p>
+
+            <p>
+              Aside from Lifted I worked on Zero-1's other experiments,
+              iterating quickly to try and validate product viability. Another
+              large part of my responsibilities was supporting their junior
+              developers through mentoring, pair programming and code review.
+            </p>
 
             <p class="job__skills">
-              Skills: Typescript (+ tsoa, typeorm, typegraphql), Next.js, React
+              Stack: Typescript (+ tsoa, typeorm, typegraphql), Next.js, React
               Native, Postgres
             </p>
           </div>
@@ -109,36 +134,43 @@
           <section class="jobs--additional" style="display: none">
             <div class="job">
               <p class="job__client">
+                <a href="https://www.zappar.com/" target="_blank">Zappar</a>
+                <span class="job__date">(2022)</span>
+              </p>
+              <p>
+                Created a web app to wrap Zappar’s WebAR experience, handling
+                all non-AR user flows and integrating with a third-party
+                provided backend. Tight integration with the AR experience meant
+                finding ways to keep the react state and ThreeJS contexts in
+                sync.
+              </p>
+            </div>
+
+            <div class="job">
+              <p class="job__client">
                 <a href="https://www.itsyall.com/" target="_blank">y’all</a>
+                <span class="job__date">(2021)</span>
               </p>
               <p>
                 Implemented a custom authentication/access control system across
                 the serverless stack, CMS and Next.js app. Deep sanity
                 integration for user group and permission management.
               </p>
-              <p class="job__skills">Skills: sanity.io, auth0, Next.js</p>
-            </div>
-
-            <div class="job">
-              <p class="job__client">
-                <a href="https://www.zappar.com/" target="_blank">Zappar</a>
-              </p>
-              <p>
-                Created a web app to wrap Zappar’s WebAR experience, handling
-                all non-AR user flows and integrating with a third-party
-                provided backend.
-              </p>
+              <p class="job__skills">Stack: sanity.io, auth0, Next.js</p>
             </div>
 
             <div class="job">
               <p class="job__client">
                 <a href="https://letsjaam.com/" target="_blank">JAAM</a>
+                <span class="job__date">(2021)</span>
               </p>
               <p>
-                Created a complex interactive learning experience for medical
+                Created an interactive learning experience for medical
                 professionals to learn about new immunotherapy treatments.
+                Implemented in React as a game-like experience with branching
+                learning paths, with each state and path declaratively
+                represented in a dependency graph.
               </p>
-              <p class="job__skills">Skills: React, complex state management</p>
             </div>
 
             <div class="job">
@@ -146,6 +178,7 @@
                 <a href="https://www.movingbrands.com/" target="_blank"
                   >Moving Brands</a
                 >
+                <span class="job__date">(2019, 2020)</span>
               </p>
               <p>
                 I've worked with Moving Brands on a number of projects,
@@ -170,6 +203,7 @@
             <div class="job">
               <p class="job__client">
                 <a href="https://yunojuno.com" target="_blank">YunoJuno (HQ)</a>
+                <span class="job__date">(2019)</span>
               </p>
               <p>
                 Re-platformed YunoJuno’s hard-coded gatsby marketing site to be
@@ -183,6 +217,7 @@
                 <a href="https://www.wizardingworld.com/" target="_blank"
                   >Wizarding World (via Huge)</a
                 >
+                <span class="job__date">(2018)</span>
               </p>
               <p>
                 Led a team to build the first stages of a the Wizarding World
@@ -196,18 +231,8 @@
 
             <div class="job">
               <p class="job__client">
-                <a href="https://www.moteefe.com/" target="_blank">Moteefe</a>
-              </p>
-              <p>
-                Built components for use across the client’s ecommerce and
-                marketing platforms.
-              </p>
-              <p class="job__skills">Skills: React, Jest, Styled components</p>
-            </div>
-
-            <div class="job">
-              <p class="job__client">
                 <a href="https://www.ekino.com/en/" target="_blank">Ekino</a>
+                <span class="job__date">(2017)</span>
               </p>
               <p>
                 Built a financial dashboard powered by a modular CMS,
@@ -221,6 +246,7 @@
             <div class="job">
               <p class="job__client">
                 <a href="https://www.beamly.com" target="_blank">Beamly</a>
+                <span class="job__date">(2017)</span>
               </p>
               <p>
                 Built the platform to power the next generation of marketing
@@ -234,6 +260,7 @@
                 <a href="http://stinkdigital.com" target="_blank"
                   >StinkDigital</a
                 >
+                <span class="job__date">(2016)</span>
               </p>
               <p>
                 Created cutting-edge digital experiences including a digital
@@ -366,9 +393,14 @@
             </div>
           </section>
 
-          <button id="jobs-toggle" class="jobs__toggle">
+          <button id="jobs-toggle" class="jobs__toggle no-print">
             Show more clients & work +
           </button>
+
+          <p class="print-only">
+            More work experience available online at
+            <a href="https://rossmackay.co">rossmackay.co</a>
+          </p>
 
           <h2 id="education">Education</h2>
 
@@ -382,6 +414,17 @@
               editing
             </p>
           </div>
+
+          <!-- <h2 id="education">The rest</h2>
+          <p>
+            In my free time I enjoy cycling, hiking and mountaineering. I'm the
+            webmaster of a local mountaineering club
+          </p>
+          <p>
+            I'm a keen cyclist, and spent spring/summer of 2024 cycle touring
+            around europe, from London to Prague over ~3000km. I hope one day to
+            resume the trip and continue through Asia.
+          </p> -->
 
           <!-- <div class="job">
             <h3 class="job__client">Interactive Media (2010 - 2012)</h3>
@@ -397,12 +440,22 @@
             const button = document.querySelector(".jobs__toggle");
             const content = document.querySelector(".jobs--additional");
 
-            button.addEventListener("click", (evt) => {
-              evt.preventDefault();
-
+            function showAll() {
               content.style.display = "block";
               button.style.display = "none";
+            }
+
+            button.addEventListener("click", (evt) => {
+              evt.preventDefault();
+              showAll();
             });
+
+            const showAllParam = new URLSearchParams(
+              window.location.search
+            ).get("showall");
+            if (showAllParam !== null) {
+              showAll();
+            }
           </script>
         </main>
       </body>
