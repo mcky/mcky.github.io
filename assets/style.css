@@ -155,11 +155,27 @@ ul {
   text-decoration: underline;
 }
 
+.jobs--abridged {}
+
+.jobs--abridged .job {
+  margin-bottom: .2em;
+}
+
+@media print {
+  .jobs--abridged {
+    page-break-before: always;
+  }
+}
+
 .print-only {
   display: none;
 }
 
 @media print {
+  a {
+    text-decoration: none;
+  }
+  
   .no-print {
     display: none !important;
   }
