@@ -74,6 +74,15 @@ h4:before {
   content: "####";
 }
 
+@media print {
+  h1:before,
+  h2:before,
+  h3:before,
+  h4:before {
+    display: none;
+  }
+}
+
 h1 {
   font-size: 1.5rem;
   margin-bottom: 2rem;
@@ -132,8 +141,14 @@ ul {
   margin-bottom: 0.2em;
 }
 
+.job__client a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .job__skills {
   font-style: italic;
+  font-size: 0.9em;
 }
 
 .jobs__toggle {
@@ -155,10 +170,11 @@ ul {
   text-decoration: underline;
 }
 
-.jobs--abridged {}
+.jobs--abridged {
+}
 
 .jobs--abridged .job {
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
 }
 
 @media print {
@@ -175,7 +191,7 @@ ul {
   a {
     text-decoration: none;
   }
-  
+
   .no-print {
     display: none !important;
   }
