@@ -137,13 +137,21 @@ ul {
   margin-bottom: 1em;
 }
 
-.job__client {
+@media print {
+  .job {
+    margin-bottom: 0.4em;
+  }
+}
+
+.job__info {
   margin-bottom: 0.2em;
 }
 
-.job__client a {
+.job__info a,
+.job__info .job__client {
   font-weight: bold;
   text-decoration: underline;
+  color: #2b7fbe;
 }
 
 .job__skills {
@@ -170,6 +178,23 @@ ul {
   text-decoration: underline;
 }
 
+@media print {
+  .jobs--additional {
+    display: block !important;
+
+    page-break-before: always;
+  }
+
+  .jobs--additional .job__description {
+    border: 1px solid red;
+    display: none;
+  }
+
+  .jobs--additional .job__skills {
+    margin-bottom: 0;
+  }
+}
+
 .jobs--abridged {
 }
 
@@ -177,11 +202,11 @@ ul {
   margin-bottom: 0.2em;
 }
 
-@media print {
+/* @media print {
   .jobs--abridged {
     page-break-before: always;
   }
-}
+} */
 
 .print-only {
   display: none;
