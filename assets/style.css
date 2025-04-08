@@ -179,11 +179,19 @@ ul {
   text-decoration: underline;
 }
 
+@media screen {
+  .print-only {
+    display: none;
+  }
+}
+
 @media print {
+  .print-page-break {
+    page-break-before: always;
+  }
+
   .jobs--additional {
     display: block !important;
-
-    page-break-before: always;
   }
 
   .jobs--additional .job__description {
